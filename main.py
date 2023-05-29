@@ -4,8 +4,8 @@ from PIL import Image
 
 from utils import *
 
-# gray_img = cv2.imread(r'imgs/img.png', cv2.IMREAD_GRAYSCALE)
-gray_img = cv2.imread(r'imgs/good_kobel.png', cv2.IMREAD_GRAYSCALE)
+# gray_img = cv2.imread(r'images/img.png', cv2.IMREAD_GRAYSCALE)
+gray_img = cv2.imread(r'images/good_kobel.png', cv2.IMREAD_GRAYSCALE)
 kernel = cv2.getStructuringElement(cv2.MORPH_CROSS, (3, 3))
 # gray_img = apply_opening(gray_img, kernel_dil=kernel)
 gray_img = cv2.erode(gray_img, kernel, iterations=1)
